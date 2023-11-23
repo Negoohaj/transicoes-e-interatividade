@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .description {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Programas Antivírus</title>
+</head>
+<body>
+
+    <ul>
+        <li onclick="toggleDescription('avast')">Avast</li>
+        <div id="avast" class="description">
+            <p>Descrição do Avast: Um antivírus popular com recursos abrangentes de segurança.</p>
+        </div>
+
+        <li onclick="toggleDescription('bitdefender')">Bitdefender</li>
+        <div id="bitdefender" class="description">
+            <p>Descrição do Bitdefender: Oferece proteção avançada contra ameaças online e offline.</p>
+        </div>
+
+        <li onclick="toggleDescription('kaspersky')">Kaspersky</li>
+        <div id="kaspersky" class="description">
+            <p>Descrição do Kaspersky: Conhecido por sua eficácia na detecção e remoção de malware.</p>
+        </div>
+
+        <!-- Adicione mais itens conforme necessário -->
+
+    </ul>
+
+    <script>
+        function toggleDescription(id) {
+            var description = document.getElementById(id);
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
